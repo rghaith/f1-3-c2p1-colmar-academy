@@ -1,0 +1,435 @@
+html {
+  font-size: 16px;
+  color: #454851;
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  color: #334d4e;
+  font-weight: bold;
+  margin: .5em auto;
+}
+
+p {
+  font-weight: 100;
+  margin: .2em auto;
+}
+
+/* Header */
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo .colmar {
+  color: #334d4e;
+  font-size: 1.5rem;
+}
+
+.logo .academy {
+  font-size: 1.5rem;
+  color: #dee1e5;
+  font-weight: lighter;
+}
+
+.desktop li {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+.desktop a {
+  color: #334d4e;
+}
+
+.mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .desktop, .colmar, .academy {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .mobile li {
+    display: inline-block;
+    padding: 0 2em;
+  }
+
+}
+
+/* Sign Up Section */
+.signup {
+  background-image: url("../images/banner2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(236, 240, 241, .3);
+  width: 1200px;
+}
+
+.content .title {
+  border-bottom: 2px solid white;
+  width: 900px;
+  margin-top: -1em;
+}
+
+.title h1 {
+  font-family: "Julius Sans One";
+  padding: .5em .5em .2em .5em;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.title p {
+  font-style: italic;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.content .signup-btn {
+  text-align: center;
+  background-color: white;
+  width: 20%;
+  padding: .5em .5em;
+  margin-top: 1em;
+  border-radius: 6px;
+  margin-bottom: .5em;
+  transition: background-color 800ms ease-in;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.signup-btn:hover {
+  background-color: #334d4e;
+}
+
+.signup-btn a {
+  color: #454851;
+  transition: color 800ms ease-in;
+}
+
+.signup-btn a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 720px) {
+  .signup {
+    height: 400px;
+  }
+
+  .banner .content {
+    width: 470px;
+    margin-top: 16rem;
+    background-color: rgba(236, 240, 241, 1);
+  }
+
+  .content .title {
+    width: 400px;
+  }
+
+  .signup h1 {
+    font-size: 2rem;
+    color: #334d4e;
+    text-shadow: none;
+  }
+
+  .signup p {
+    color: #334d4e;
+    text-shadow: none;
+  }
+
+}
+
+
+/* Information */
+
+.information {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.practicing {
+  margin: auto 2em;
+}
+
+.main-image img {
+  width: 550px;
+  border-radius: 6px;
+}
+
+.practicing .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 550px;
+}
+
+.content h1 {
+  padding: .5em .5em .2em 0;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.info-right {
+  flex-direction: column;
+  border-left: 1px grey solid;
+}
+
+.orientation, .campus, .guest {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  transition: background-color 500ms linear;
+}
+
+.orientation:hover, .campus:hover, .guest:hover{
+  background-color: lightgrey;
+}
+
+.info-mob {
+  display: none;
+}
+
+.info-desk {
+  border-radius: 6px;
+  width: 150px;
+}
+
+.info-right .content {
+  width: 300px;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.content-table .content {
+  width: 300px;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .practicing {
+    display: none;
+  }
+
+  .info-right {
+    border-left: none;
+  }
+
+  .info-desk {
+    display: none;
+  }
+
+  .info-mob {
+    display: flex;
+    width: 460px;
+  }
+
+  .orientation, .campus, .guest {
+    display: flex;
+    flex-direction: column;
+    border-left: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .info-right .content {
+    margin-top: .5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
+/* Courses */
+.courses {
+  background-image: url(../images/patterndesign.jpg);
+  background-repeat: repeat;
+}
+
+.courses .title {
+  display: flex;
+  justify-content: center;
+}
+
+.grid .course {
+  background-color: white;
+  border-radius: 6px;
+  margin: 1em 1em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.row-one, .row-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1em 4em;
+  flex-wrap: wrap;
+}
+
+.grid img {
+  width: 250px;
+  margin-top: -1em;
+  border-radius: 6px;
+  margin-left: 2em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.grid .content {
+  width: 300px;
+  margin: .5em auto;
+  padding: .5em .5em;
+}
+
+.course h4:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width:840px) {
+  .row-one, .row-two {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .course .img {
+    display: none;
+  }
+
+  .course .content {
+  }
+
+  .course p, .course span {
+    display: none;
+  }
+
+}
+
+
+/* Thesis */
+
+.thesis {
+  margin: 1.7rem 2em;
+}
+
+.thesis h1 {
+  color: #334d4e;
+  text-align: center;
+  margin: .5em auto;
+}
+
+.thesis-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.video-content {
+  width: 600px;
+}
+
+.thesis-vid {
+  width: 600px;
+}
+
+.thesis .content-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.fisma, .now-and-then {
+  display: flex;
+  flex-direction: row;
+  transition: background-color 500ms linear;
+  margin: .5rem 1rem;
+}
+
+.fisma:hover, .now-and-then:hover {
+  background-color: lightgrey;
+}
+
+.content-table {
+  border-left: 1px solid gray;
+}
+
+.content-table img {
+  width: 150px;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width:720px) {
+  .fisma, .now-and-then {
+    display: none;
+  }
+
+  .content-table {
+    border-left: none;
+  }
+
+  .video-content {
+    width: 400px;
+  }
+
+  .thesis-vid {
+    width: 400px;
+  }
+
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background-image: url(../images/patterndesign.jpg);
+  justify-content: space-between;
+  color: white;
+  padding: 1.5em 2em;
+  font-weight: 300;
+}
+
+.terms li {
+  display: inline-block;
+  font-weight: lighter;
+  padding: 0 1em;
+}
+
+@media only screen and (max-width:720px) {
+  .terms li {
+    display: none;
+  }
+}
